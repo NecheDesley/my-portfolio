@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.641), rgba(0, 0, 0, 0.636)), url(/shutterstock_homelearning_crop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    background-color: rgba(19, 11, 113, 0.246);
+    padding: 20px;
+}
+
+.logo-nav {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-nav h5 a {
+    color: #0cd7fb;
+    border: 2px solid gray;
+    font-size: 30px;
+}
+
+.dropdown-nav-menu {
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+header nav ul li a:hover{
+    color: rgb(10, 1, 21);
+    transition: .6s;
+    cursor: pointer;
+}
+
+.dropdown-nav-menu {
+    /* background-color: rgb(92, 25, 39); */
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+
+.nav-bar {
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown-content {
+    background-color: rgba(255, 255, 255, 0.825);
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    padding: 10px;
+    display: none;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color:#0c0295;
+    display: block;
+}
+
+.nav-bar:hover .dropdown-content {
+    display: block;
+    transition: .4s;
+}
+
+.dropdown-content a:hover {
+    color: rgb(18, 4, 46);
+}
+
+/* header styling ends here */
+
+
+
+/* main style starts here*/
+
+.cover-part {
+    margin-top: 15em;
+    width: 70%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover-part .text-area {
+    /* border: 1px solid red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cover-part .text-area h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.cover-part .text-area p {
+    margin-top: 10px;
+    color: rgba(250, 235, 215, 0.845);
+}
+
+
+
+.cover-part .my-image img {
+    padding: 40px;
+    border-radius: 5px;
+}
+
+
+footer{
+    background-color: rgb(30, 3, 82);
+    width:100%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p,.icons{
+    color: rgba(255, 255, 255, 0.742);
+    
+}
+
+
+@media (max-width:850px) {
+    .cover-part {
+        grid-gap: 8em;
+
+    }
+}
+
+
+@media (max-width:600px) {
+
+    header nav ul {
+        display: none;
+    }
+
+    .dropdown-nav-menu {
+        display: block;
+    }
+
+    .logo-nav h5 a {
+        font-size: 25px;
+    }
+
+    .cover-part .text-area h1 {
+        font-size: 25px;
+    }
+
+    .cover-part .text-area h3 {
+        font-size: 15px;
+    }
+
+    .cover-part .text-area p {
+        font-size: 13px;
+    }
+
+}
