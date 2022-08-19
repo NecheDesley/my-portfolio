@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.641), rgba(0, 0, 0, 0.636)), url(/shutterstock_homelearning_crop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.641), rgba(0, 0, 0, 0.636)), url(shutterstock_homelearning_crop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
