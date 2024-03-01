@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-shadow: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+        }
+
+        .name h6 {
+            position: relative;
+            margin-top: 10vh;
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        .loader {
+            border: 20px solid red;
+            border-top: 20px solid rgba(4, 4, 73, 0.342);
+            border-top: 20px solid rgba(225, 225, 225, 0.945);
+            border-radius: 50%;
+            width: 200px;
+            left: 15;
+            top: 26%;
+            position: absolute;
+            height: 200px;
+            animation: spin 2.5s linear infinite;
+        }
+
+        .loader::before {
+            background: rgba(0, 0, 255, 0.91);
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            box-shadow: 0 0 30px 15px rgba(0, 0, 255, 0.91);
+            margin-top: 85%;
+            margin-left: 6%;
+
+        }
+
+        .loader1{
+            border: 20px solid transparent;
+            border-top: 20px solid rgba(0, 0, 255, 0.91);
+            border-right: 20px solid rgba(0, 225, 225, 0.945);
+            border-radius: 50%;
+            width: 200px;
+            left: 5px;
+            top: 35%;
+            position: absolute;
+            height: 200px;
+            animation: spin 2.5s linear infinite;
+        }
+
+        .loader2{
+            border: 20px solid transparent;
+            border-bottom: 20px solid rgba(0, 225, 225, 0.945);
+            border-right: 20px solid rgba(151, 4, 189, 0.281);
+            border-radius: 50%;
+            width: 200px;
+            left: 15%;
+            top: 26%;
+            position: absolute;
+            height: 200px;
+            animation: spin 2.5 linear infinite;
+        }
+
+        .loader3{
+            border: 20px solid transparent;
+            border-top: 20px solid orange;
+            border-right: 20px solid orange;
+            border-radius: 50%;
+            width: 200px;
+            left:15%;
+            top: 45%;
+            position: absolute;
+            height: 200px;
+            animation: Desley 2.5s linear infinite;
+        }
+
+.loader1::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(250, 97, 2, 0.91);
+    margin-top: 85%;
+    border: 0;
+    box-shadow: 0 0 30px 15px rgba(0,255, 25, 0.913);
+    margin-left:73%;
+}
+
+
+.loader2::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 2, 0.91);
+    margin-top: 75%;
+    box-shadow: 0 0 30px 15px rgba(255,255, 25, 0.913);
+    margin-left:-10;
+}
+
+
+.loader3::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:purple;
+    margin-top: 5%;
+    box-shadow: 0 0 30px 15px rgba(167, 167, 240, 0.913);
+    margin-left:-7;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+         }
+    100% {
+        transform: rotate(360deg);
+        }
+}
+
+@keyframes Desley{
+    0% {
+        transform: rotate(0deg); 
+        }
+    100% {
+        transform: rotate(-360deg); 
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="name">
+        <h6>GOLDEN GUINEA PLC</h6>
+    </div>
+    <div class="loader"></div>
+    <div class="loader1"></div>
+    <div class="loader2"></div>
+    <div class="loader3"></div>
+
+</body>
+
+
+</html>
